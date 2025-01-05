@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kocham Kotki - Strona Główna</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .navbar h2 {
+            margin: 0 20px;
+            font-size: 24px;
+        }
+        .navbar button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .navbar button:hover {
+            background-color: #777;
+        }
+        .container {
+            width: 90%;
+            margin: 60px auto 0 auto;
+            padding: 20px;
+        }
+        .section {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h2>kochamkotki.xyz</h2>
+        <button onclick="goToHome()">Główna</button>
+        <button onclick="goToRandomCat()">Losowy kotek</button>
+        <button onclick="goToCollection()">Kolekcja kotów</button>
+    </div>
+    <div class="container">
+        <div class="section">
+            <h3>Ciekawostka 1: Koty mają unikalne odciski nosa</h3>
+            <p>Podobnie jak ludzkie odciski palców, każdy kot ma unikalny odcisk nosa. Żadne dwa koty nie mają identycznych wzorów na nosie.</p>
+        </div>
+        <div class="section">
+            <h3>Ciekawostka 2: Koty spędzają większość dnia na spaniu</h3>
+            <p>Typowy kot śpi od 12 do 16 godzin dziennie, co oznacza, że spędza około 70% swojego życia na spaniu!</p>
+        </div>
+        <div class="section">
+            <h3>Ciekawostka 3: Koty potrafią mruczeć w różnych sytuacjach</h3>
+            <p>Mruczenie kota nie zawsze oznacza, że jest szczęśliwy. Koty mogą również mruczeć, gdy są zdenerwowane, chore lub zestresowane, aby się uspokoić.</p>
+        </div>
+        <div class="section">
+            <h3>Ciekawostka 4: Koty są bardzo zwinne</h3>
+            <p>Koty mają wyjątkową budowę ciała, która pozwala im skakać do sześciu razy więcej niż ich długość ciała w jednym skoku!</p>
+        </div>
+    </div>
+    <script>
+        function goToHome() {
+            // Przejście na stronę główną
+            window.location.href = 'index.html'; // Przykładowa ścieżka do strony głównej
+        }
+
+        function goToRandomCat() {
+            // Przejście do strony z losowymi kotkami
+            window.location.href = 'losowykot.html'; // Przykładowa ścieżka do strony z losowymi kotkami
+        }
+
+        function goToCollection() {
+            // Przejście do kolekcji kotów
+            window.location.href = 'cat-collection.html'; // Przykładowa ścieżka do kolekcji kotów
+        }
+    </script>
+</body>
+</html>
